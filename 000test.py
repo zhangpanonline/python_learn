@@ -1,11 +1,9 @@
-import random
+my_str = 'hello world'
+my_dict = {}
 
-schools = [[], [], []]
-teachers = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H']
+for i in my_str:
+    if i != ' ':
+        my_dict[i] = my_str.count(i)
+        
 
-for teacher in teachers:
-    num = random.randint(0, 2)
-    schools[num].append(teacher)
-    
-print(schools)
-
+print(my_dict)
