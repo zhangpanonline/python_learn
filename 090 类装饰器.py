@@ -12,7 +12,7 @@ class LoginCheck(object):
         print('请先登录...')
         # 4. 调用原函数
         res = self.__fn(*args, **kwargs)
-        return res
+        return res 
 
 
 @LoginCheck  # comment = LoginCheck(comment); comment() 会自动调用 __call__ 方法
