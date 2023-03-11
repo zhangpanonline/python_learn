@@ -7,14 +7,14 @@ if __name__ == '__main__':
         host='localhost',
         user='root',
         password='root',
-        database='test',
+        database='jing_dong',
         port=3306,
         charset='utf8')
     # 3. 创建游标对象
     cursor = conn.cursor()
     # 4. 执行 SQL 语句
     # 4.1 书写 SQL
-    sql = 'select * from stu;'
+    sql = 'select * from goods;'
     # 4.2 执行 SQL
     # 返回值是影响的行数
     # 对于查询操作来说，查询出来的数据保存在游标对象中
